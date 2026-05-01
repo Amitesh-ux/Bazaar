@@ -79,7 +79,7 @@ function App() {
       case 'shopInventory': return <ShopInventory {...navProps} params={params} />;
       case 'home': return <Home           {...navProps} />;
       case 'map': return <MapView        {...navProps} />;
-      case 'findme': return <MapView {...navProps} mode="findme" />;
+      // case 'findme': return <MapView {...navProps} mode="findme" />;
       case 'orders':        return <Orders         {...navProps} />;
       case 'shopDetail':    return <ShopDetail     {...navProps} params={params} />;
       case 'productDetail': return <ProductDetail  {...navProps} params={params} />;

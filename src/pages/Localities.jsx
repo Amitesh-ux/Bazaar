@@ -12,7 +12,7 @@ const allShops = [
 ];
 
 export default function Localities({ navigate, params }) {
-  const { city = 'Bengaluru', locality = 'Chickpet' } = params || {};
+  const { locality = 'Chickpet' } = params || {};
   const [query, setQuery] = useState('');
 
   const shops = allShops.filter(s =>

@@ -106,12 +106,6 @@ export default function FindMe({ navigate, goBack, resetTo, cart }) {
   const onLoad    = useCallback(() => {}, []);
   const onUnmount = useCallback(() => {}, []);
 
-  const sortedShops = [...shops].sort((a, b) => {
-    if (activeSort === 'Open Now') return (b.open ? 1 : 0) - (a.open ? 1 : 0);
-    if (activeSort === 'A–Z')      return a.name.localeCompare(b.name);
-    return 0;
-  });
-
   function handleSearch(e) {
     e.preventDefault();
     if (searchQuery.trim()) {

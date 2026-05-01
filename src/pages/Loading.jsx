@@ -5,6 +5,7 @@ function Loading({ navigate }) {
   useEffect(() => {
     const t = setTimeout(() => navigate('findme'), 2000);
     return () => clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

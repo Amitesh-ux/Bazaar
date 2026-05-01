@@ -32,6 +32,7 @@ export default function Specifics({ navigate, params }) {
   const [sortOpen, setSortOpen]       = useState(false);
   const [sortProducts, setSortProducts] = useState(false);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const sorted = useMemo(() => {
     if (!sortOpen && !sortProducts) return localities;
     return [...localities].sort((a, b) => {
