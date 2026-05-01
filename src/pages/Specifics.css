@@ -1,0 +1,134 @@
+.spec-root {
+  width: 100%;
+  height: 100%;
+  background: #F5E6A3;
+  display: flex;
+  flex-direction: column;
+  font-family: 'DM Sans', sans-serif;
+  overflow: hidden;
+}
+
+.spec-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px 10px;
+  background: #EDD96A;
+}
+
+.spec-wordmark {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #2C1A0E;
+}
+
+.spec-home-icon {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.spec-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px 12px;
+  background: #EDD96A;
+  border-bottom: 1px solid #c9a84c;
+}
+
+.spec-city-pill {
+  background: #1A7A5E;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 20px;
+}
+
+.spec-sort-chip {
+  background: #EDD96A;
+  color: #2C1A0E;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #c9a84c;
+  cursor: pointer;
+}
+
+.spec-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 16px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  align-content: start;
+}
+
+.spec-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.spec-card {
+  background: #5EC4A8;
+  border-radius: 12px;
+  padding: 20px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  min-height: 72px;
+  transition: background 0.15s;
+}
+
+.spec-card:hover {
+  background: #2D9E7E;
+}
+
+.spec-card-active {
+  background: #1A7A5E;
+}
+
+.spec-card-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+
+/* add to bottom of Specifics.css */
+
+.spec-back {
+  font-size: 20px;
+  color: #2C1A0E;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 2px 6px;
+}
+
+.spec-sort-chip--open {
+  background: #1A7A5E;
+  color: #fff;
+  border-color: #1A7A5E;
+}
+
+.spec-sort-chip--products {
+  background: #B5294A;
+  color: #fff;
+  border-color: #B5294A;
+}
+
+.spec-card {
+  flex-direction: column;
+  gap: 4px;
+}
+
+.spec-card-meta {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  text-align: center;
+}

@@ -1,0 +1,89 @@
+.cities-root {
+    width: 100%;
+    height: 100%;
+    background: #F5E6A3;
+    display: flex;
+    flex-direction: column;
+    font-family: 'DM Sans', sans-serif;
+    overflow: hidden;
+  }
+  
+  .cities-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px 10px;
+    background: #EDD96A;
+  }
+  
+  .cities-wordmark {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #2C1A0E;
+  }
+  
+  .cities-home-icon {
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .cities-actions {
+    display: flex;
+    gap: 10px;
+    padding: 12px 16px;
+    background: #EDD96A;
+    border-bottom: 1px solid #c9a84c;
+  }
+  
+  .cities-pill {
+    flex: 1;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: none;
+    background: #B5294A;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  .cities-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 140px;   /* fixed row height */
+    gap: 12px;
+    padding: 16px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    align-content: start;    /* rows pack to top, don't stretch */
+  }
+  
+  .cities-grid::-webkit-scrollbar { display: none; }
+  
+  .city-card {
+    background: #5EC4A8;
+    border-radius: 12px;
+    padding: 20px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.15s;
+    /* removed min-height — grid-auto-rows controls height now */
+  }
+  
+  .city-card:hover { background: #2D9E7E; }
+  
+  .city-card-active {
+    background: #1A7A5E;
+  }
+  
+  .city-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+  }

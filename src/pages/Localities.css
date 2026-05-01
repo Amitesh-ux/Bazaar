@@ -1,0 +1,125 @@
+.loc-root {
+    width: 100%;
+    height: 100%;
+    background: #F5E6A3;
+    display: flex;
+    flex-direction: column;
+    font-family: 'DM Sans', sans-serif;
+    overflow: hidden;
+  }
+  
+  .loc-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px 10px;
+    background: #EDD96A;
+  }
+  
+  .loc-wordmark {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #2C1A0E;
+  }
+  
+  .loc-home-icon {
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .loc-toolbar {
+    padding: 8px 16px 10px;
+    background: #EDD96A;
+    border-bottom: 1px solid #c9a84c;
+  }
+  
+  .loc-locality-pill {
+    background: #1A7A5E;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 6px 16px;
+    border-radius: 20px;
+  }
+  
+  .loc-search {
+    padding: 12px 16px 8px;
+  }
+  
+  .loc-search-input {
+    width: 100%;
+    padding: 9px 14px;
+    border-radius: 20px;
+    border: 1px solid #c9a84c;
+    background: #fff;
+    font-size: 13px;
+    font-family: 'DM Sans', sans-serif;
+    color: #2C1A0E;
+    outline: none;
+  }
+  
+  .loc-search-input:focus {
+    border-color: #1A7A5E;
+  }
+  
+  .loc-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px 16px 16px;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .loc-list::-webkit-scrollbar { display: none; }
+  
+  .loc-card {
+    background: #5EC4A8;
+    border-radius: 12px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  
+  .loc-card:hover { background: #2D9E7E; }
+  
+  .loc-card-left {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  
+  .loc-shop-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .loc-shop-sub {
+    font-size: 11px;
+    color: rgba(255,255,255,0.8);
+  }
+  
+  .loc-badge {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 10px;
+    flex-shrink: 0;
+  }
+  
+  .loc-badge-open   { background: #D4EDDD; color: #1D6B3A; }
+  .loc-badge-closed { background: #FCE8E8; color: #A32D2D; }
+  
+  .loc-empty {
+    font-size: 13px;
+    color: #7B6040;
+    text-align: center;
+    margin-top: 32px;
+  }
